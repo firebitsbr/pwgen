@@ -1,0 +1,5 @@
+language: go
+notifications:
+    email:
+      - david.j.peacock@gmail.com
+    slack: coder-fellowship:MPMUVHv1UDwaE4CuGA271Gm4
