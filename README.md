@@ -22,6 +22,13 @@ Usage of pwgen:
         Password length (default 16):
 ```
 
+## Example
+
+```
+$ pwgen -length 20 -charset alphanumeric
+FaI5PwOYB54x5cnDG7KZ
+```
+
 ## License
 
  MIT
