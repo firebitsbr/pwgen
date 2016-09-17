@@ -1,6 +1,8 @@
 # pwgen
 
 [![Build Status](https://travis-ci.org/davidjpeacock/pwgen.svg?branch=master)](https://travis-ci.org/davidjpeacock/pwgen)
+[![Go Report Card](https://goreportcard.com/badge/github.com/davidjpeacock/pwgen)](https://goreportcard.com/report/github.com/davidjpeacock/pwgen)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/davidjpeacock/pwgen/master/LICENSE)
 
 Cryptographically secure password generator implemented in Golang.
 
