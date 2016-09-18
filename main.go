@@ -10,11 +10,19 @@ import (
 	"fmt"
 )
 
+const version = "0.0.2"
+
 var length = flag.Int("length", 16, "Password length")
 var charset = flag.String("charset", "alphanumeric", "Character set: alpha, numeric, alphanumeric")
+var v = flag.Bool("v", false, "Prints pwgen version")
 
 func main() {
 	flag.Parse()
+
+	if *v {
+		fmt.Println("pwgen version: " + version)
+		return
+	}
 
 	charSetOption := characterSets(*charset)
 
