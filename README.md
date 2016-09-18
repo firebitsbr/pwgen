@@ -21,14 +21,15 @@ Usage of pwgen:
   -charset string
         Character set: alpha, numeric, alphanumeric (default "alphanumeric")
   -length int
-        Password length (default 16):
+        Password length (default 16)
+  -v    Prints pwgen version
 ```
 
 ## Example
 
 ```
-$ pwgen -length 20 -charset alphanumeric
-FaI5PwOYB54x5cnDG7KZ
+$ pwgen -length 20 -charset alpha
+FPxvdWzfhPAmsCnKSGAd
 ```
 
 ## License
