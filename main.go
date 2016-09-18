@@ -24,13 +24,14 @@ func main() {
 func characterSets(charSetOption string) string {
 	var chars string
 
-	if charSetOption == "alpha" {
+	switch {
+	case charSetOption == "alpha":
 		chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-	}
-	if charSetOption == "numeric" {
+	case charSetOption == "numeric":
 		chars = "0123456789"
-	}
-	if charSetOption == "alphanumeric" {
+	case charSetOption == "alphanumeric":
+		chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+	default:
 		chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 	}
 	return string(chars)
