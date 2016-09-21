@@ -10,10 +10,10 @@ import (
 	"fmt"
 )
 
-const version = "0.0.2"
+const version = "0.0.3"
 
 var length = flag.Int("length", 16, "Password length")
-var charset = flag.String("charset", "alphanumeric", "Character set: alpha, numeric, alphanumeric")
+var charset = flag.String("charset", "alphanumeric", "Character set: alpha, numeric, alphanumeric, special, qwerty")
 var v = flag.Bool("v", false, "Prints pwgen version")
 
 func main() {
@@ -39,6 +39,10 @@ func characterSets(charSetOption string) string {
 		chars = "0123456789"
 	case charSetOption == "alphanumeric":
 		chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+	case charSetOption == "special":
+		chars = "~`!@#$%^&*()-=_+{}[];':\"|<>,./?\\ "
+	case charSetOption == "qwerty":
+		chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~`!@#$%^&*()-=_+{}[];':\"|<>,./?\\ "
 	default:
 		chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 	}
