@@ -19,7 +19,7 @@ go get github.com/davidjpeacock/pwgen
 ```
 Usage of pwgen:
   -charset string
-        Character set: alpha, numeric, alphanumeric (default "alphanumeric")
+        Character set: alpha, numeric, alphanumeric, special, qwerty (default "alphanumeric")
   -length int
         Password length (default 16)
   -v    Prints pwgen version
